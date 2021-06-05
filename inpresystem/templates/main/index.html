@@ -1,0 +1,128 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Менеджер текстов</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{% static 'main/css/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/Project.css' %}" rel="stylesheet">
+<link href="{% static 'main/css/index.css' %}" rel="stylesheet">
+<script src="{% static 'main/js/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static 'main/js/wb.overlay.min.js' %}"></script>
+<script>
+$(document).ready(function()
+{
+   var $overlaymenu = $('#OverlayMenu1-overlay');
+   $overlaymenu.overlay({'hideTransition':true});
+   $('#OverlayMenu1').on('click', function(e)
+   {
+      $.overlay.show($overlaymenu);
+      return false;
+   });
+});
+</script>
+</head>
+<body>
+<div id="PageHeader">
+<div id="wb_OverlayMenu1">
+<a href="#" id="OverlayMenu1">
+<span class="line"></span>
+<span class="line">
+</span><span class="line"></span>
+</a>
+</div>
+<div id="wb_Logo">
+<h1 id="Logo">XMLТекст</h1></div>
+</div>
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Double click to edit</span></div>
+
+<select name="ProjectsList" size="24" id="Combobox1" autocomplete="off" onchange="location = this.value">
+   {% if xml_file %}
+		{% for doc in xml_file.actual_list_of_objects %}
+         <option value="{{url}}view_{{doc.id}}">{{doc.title}}</option>
+		{% endfor %}
+	{% endif %}
+</select>
+
+<form action="{% url 'main:create_text_button' %}" method="POST">
+	{% csrf_token %}
+	<input type="submit" id="Button1" name="ButtonCreatetext" value="Добавить новый текст">
+</form>
+
+<form action="{% url 'main:find_button' %}" method="POST">
+	{% csrf_token %}
+   <input style="visibility:inherit" type="text" id="EditboxFind"  name="find" value="{{xml_file.find_string}}" maxlength="255" spellcheck="false">
+	<input type="submit" id="ButtonFind" name="ButtonFind" value="Найти">
+</form>
+
+<form action="{% url 'main:sort_button' %}" method="POST">
+	{% csrf_token %}
+	<input type="submit" id="ButtonSort" name="ButtonSort" value="Сортировать">
+</form>
+
+<div id="MainLayer">
+   <div id="CPLayer" style="visibility:{{CPVisibility}}">
+      <form action="{% url 'main:create_text' %}" method="POST">
+         {% csrf_token %}
+         <label style="visibility:inherit" for="" id="Label10">Создание текста</label>
+         
+         <label style="visibility:inherit" for="" id="Label8">Заголовок:</label>
+         <label style="visibility:inherit" for="" id="Label9">Источник:</label>
+         <label style="visibility:inherit" for="" id="Label11">Категория:</label>
+         <label style="visibility:inherit" for="" id="Label12">Дата публикации:</label>
+         <label style="visibility:inherit" for="" id="Label13">Идентификатор:</label>
+
+         <input style="visibility:inherit" type="text" id="Editbox6"  name="title" value="" maxlength="255" spellcheck="false">
+         <input style="visibility:inherit" type="text" id="Editbox7"  name="source" value="" maxlength="255" spellcheck="false">
+         <input style="visibility:inherit" type="text" id="Editbox8"  name="category" value="" spellcheck="false" min="0">
+         <input style="visibility:inherit" type="text" id="Editbox9"  name="published" value="" spellcheck="false" min="0">
+         <input style="visibility:inherit" type="text" id="Editbox10" name="id" value="" readonly spellcheck="false" min="0">
+         
+         <textarea style="visibility:inherit; overflow:auto;" type="text" id="Editbox11" name="text" spellcheck="false" min="0"></textarea>>
+
+         <input style="visibility:inherit" type="submit" id="Button3" name="Save" value="Создать текст">
+      </form>
+   </div>
+   <div id="RPLayer" style="visibility:{{RPVisibility}}">
+      <form action="{{url}}save_{{text.id}}/" method="POST">
+         {% csrf_token %}
+         <label style="visibility:inherit" for="" id="Label10">Обзор текста</label>
+         
+         <label style="visibility:inherit" for="" id="Label8">Заголовок:</label>
+         <label style="visibility:inherit" for="" id="Label9">Источник:</label>
+         <label style="visibility:inherit" for="" id="Label11">Категория:</label>
+         <label style="visibility:inherit" for="" id="Label12">Дата публикации:</label>
+         <label style="visibility:inherit" for="" id="Label13">Идентификатор:</label>
+
+         <input style="visibility:inherit" type="text" id="Editbox6"  name="title" value="{{text.title}}" maxlength="255" spellcheck="false">
+         <input style="visibility:inherit" type="text" id="Editbox7"  name="source" value="{{text.source}}" maxlength="255" spellcheck="false">
+         <input style="visibility:inherit" type="text" id="Editbox8"  name="category" value="{{text.category}}" spellcheck="false" min="0">
+         <input style="visibility:inherit" type="text" id="Editbox9"  name="published" value="{{text.published}}" spellcheck="false" min="0">
+         <input style="visibility:inherit" type="text" id="Editbox10" name="id" value="{{text.id}}" readonly spellcheck="false" min="0">
+         
+         <textarea style="visibility:inherit; overflow:auto;" type="text" id="Editbox11" name="text" spellcheck="false" min="0">{{text.text}}</textarea>>
+
+         <input style="visibility:inherit" type="submit" id="Button3" name="Save" value="Сохранить изменения">
+      </form>
+      <form action="{{url}}delete_{{text.id}}/" method="POST">
+         {% csrf_token %}
+         <input style="visibility:inherit" type="submit" id="Button4" name="Delete" value="Удалить текст">
+      </form>
+   </div>
+</div>
+<div id="PageFooter_sensitive"></div>
+<div id="PageFooter">
+</div>
+<div id="OverlayMenu1-overlay">
+<div class="OverlayMenu1">
+<ul class="drilldown-menu" role="menu">
+<li><a role="menuitem" href="#"><i class="fa fa-home overlay-icon"></i>&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103;</a></li>
+<li><a role="menuitem" href="#"><i class="fa fa-user overlay-icon"></i>&#1054;&nbsp;&#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1077;</a></li>
+   </ul>
+</div>
+<a class="close-button" id="OverlayMenu1-close" href="#" role="button" aria-hidden="true"><span></span></a>
+</div>
+</body>
+</html>

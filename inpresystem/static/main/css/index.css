@@ -1,0 +1,3145 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#PageHeader
+{
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #808080 100%);
+   box-shadow: 0px 0px 1px #0000FF;
+   box-sizing: border-box;
+}
+#OverlayMenu1
+{
+   background-color: rgba(66,66,66,0.00);
+   background-image: none;
+   border: 0px solid #424242;
+   margin: 0;
+}
+#OverlayMenu1:hover
+{
+   background-color: rgba(204,204,204,0.00);
+   background-image: none;
+   border-color: #424242;
+}
+#OverlayMenu1
+{
+   display: block;
+   width: 100px;
+   height: 100px;
+   position: absolute;
+}
+#OverlayMenu1 .line
+{
+   width: 32px;
+   height: 6px;
+   background: #FFFFFF;
+   display: block;
+   margin: 6px auto;
+}
+#OverlayMenu1:hover .line
+{
+   background: #424242;
+}
+#OverlayMenu1 .line:first-child
+{
+   margin-top: 34px;
+}
+#OverlayMenu1-close
+{
+   background: transparent;
+   font-size: 10px;
+   height: 2.8em; 
+   outline: none;
+   position: absolute;
+   right: 10px;
+   text-align: left;
+   top: 10px;
+   width: 3em; 
+}
+#OverlayMenu1-close:before, #OverlayMenu1-close:after
+{
+   background: #FFFFFF;
+   content: "";
+   display: block;
+   height: 0.6em;
+   left: 0;
+   opacity: 1;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+#OverlayMenu1-close span
+{
+   background: #FFFFFF;
+   height: 0.6em;
+   margin-top: -0.3em;
+   position: absolute;
+   top: 50%;
+   -webkit-transform-origin: 50% 50%;
+   transform-origin: 50% 50%;
+   width: 100%;
+}
+#OverlayMenu1-close span::after
+{
+   background: #FFFFFF;
+   content: "";
+   display: block;
+   height: 0.6em;
+   position: absolute;
+   -webkit-transform-origin: 50% 50%;
+   transform-origin: 50% 50%;
+   width: 100%;
+}
+#OverlayMenu1-close:before
+{
+   margin-top: -0.3em;
+   opacity: 0;
+   top: 50%;
+}
+#OverlayMenu1-close:after
+{
+   bottom: 50%;
+   opacity: 0;
+}
+#OverlayMenu1-close span
+{
+   background: #FFFFFF;
+   -webkit-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+}
+#OverlayMenu1-close span:after
+{
+   background: #FFFFFF;
+   -webkit-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+}
+#OverlayMenu1-overlay
+{
+   background-color: rgba(122,122,122,0.87);
+   height: 100%;
+   left: 0;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: -1;
+}
+#OverlayMenu1-overlay ul
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.OverlayMenu1
+{
+   position: relative;
+   top: 50%;
+   height: 60%;
+   -webkit-transform: translateY(-50%);
+   transform: translateY(-50%);
+   width: 100%;
+   max-width: 970px;
+   margin: 0 auto 0 auto;
+}
+.OverlayMenu1 a
+{
+   text-decoration: none;
+}
+.OverlayMenu1 ul
+{
+   list-style: none;
+   padding: 0;
+   text-align: center;
+}
+.OverlayMenu1 li 
+{
+   position: relative;
+}
+.OverlayMenu1 li a 
+{
+   display: block;
+   position: relative;
+   padding: 10px 15px 10px 15px;
+   color: #FFFFFF;
+   outline: none;
+}
+.OverlayMenu1 li a:hover 
+{
+   color: #424242;
+   background-color: #CCCCCC;
+}
+#OverlayMenu1-overlay
+{
+   visibility: hidden;
+   width: 0;
+   left: 50%;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+   -webkit-transition: width 0.5s 0.3s, visibility 0s 0.8s;
+   transition: width 400ms 0.3s, visibility 0s 700ms;
+}
+#OverlayMenu1-overlay.show
+{
+   visibility: visible;
+   width: 100%;
+   -webkit-transition: width 400ms;
+   transition: width 400ms;
+}
+#OverlayMenu1-overlay .OverlayMenu1
+{
+   position: absolute;
+   left: 50%;
+   -webkit-transform: translateY(-50%) translateX(-50%);
+   transform: translateY(-50%) translateX(-50%);
+   opacity: 0;
+   -webkit-transition: opacity 0.3s 400ms;
+   transition: opacity 0.3s 400ms;
+}
+#OverlayMenu1-overlay.show .OverlayMenu1
+{
+   opacity: 1;
+   -webkit-transition-delay: 400ms;
+   transition-delay: 400ms;
+}
+#OverlayMenu1-overlay.hide .OverlayMenu1
+{
+   -webkit-transition-delay: 0s;
+   transition-delay: 0s;
+}
+#OverlayMenu1-overlay .overlay-icon
+{
+   margin: 0px 10px 0px 0px;
+}
+#wb_Logo
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#Logo
+{
+   color: #FFFFFF;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 75px;
+   margin: 0;
+   text-align: center;
+   text-shadow: 1px 1px 2px rgba(0,0,255,0.50);
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#Combobox1
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 5px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color: #4F4F4F;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   box-sizing: border-box;
+}
+#Combobox1:focus
+{
+   border-color: #808080;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(128,128,128,0.60);
+   outline: 0;
+}
+#Button1
+{
+   border: 1px solid #C0C0C0;
+   border-radius: 4px;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   color: #4F4F4F;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 24px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#ButtonFind
+{
+   border: 1px solid #C0C0C0;
+   border-radius: 4px;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   color: #4F4F4F;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 24px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#ButtonSort
+{
+   border: 1px solid #C0C0C0;
+   border-radius: 4px;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   color: #4F4F4F;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#MainLayer
+{
+   background-color: rgba(0,0,205,0.00);
+   background-image: none;
+}
+#CPLayer
+{
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+}
+#Editbox1
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#EditboxFind
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox1:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#EditboxFind:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Editbox2
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox2:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Label1
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label2
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#FileUpload1 *
+{
+   box-sizing: border-box;
+}
+#FileUpload1{
+   display: table;
+   border-collapse: separate;
+   margin: 0;
+}
+#FileUpload1 .form-control
+{
+   display: block;
+   width: 100%;
+   height: 26px;
+   line-height: 18px;
+   padding: 4px 4px 4px 4px;
+   font-family:Arial;
+   font-weight: normal;
+   font-size: 13px;
+   color: #555555;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+}
+#FileUpload1 .form-control
+{
+   position: relative;
+   z-index: 2;
+   float: left;
+   width: 100%;
+   margin-bottom: 0px;
+}
+#FileUpload1 label
+{
+   display: inline-block;
+   margin-bottom: 5px;
+   font-weight: 700;
+}
+#FileUpload1 .input-group-btn, FileUpload1 .form-control
+{
+   display: table-cell;
+}
+#FileUpload1 :first-child.form-control, FileUpload1 :first-child.input-group-btn > .btn, FileUpload1 :first-child.input-group-btn > .btn-group > .btn, FileUpload1 :last-child.input-group-btn > :not(:last-child):not(.dropdown-toggle).btn, FileUpload1 :last-child.input-group-btn > :not(:last-child).btn-group > .btn
+{
+   border-bottom-right-radius: 0px;
+   border-top-right-radius: 0px;
+}
+#FileUpload1 .input-group-btn
+{
+   width: 1%;
+   white-space: nowrap;
+   vertical-align: middle;
+   position: relative;
+   font-size: 0px;
+   white-space: nowrap;
+}
+#FileUpload1 .btn
+{
+   display: inline-block;
+   margin-bottom: 0px;
+   font-weight: 400;
+   text-align: center;
+   vertical-align: middle;
+   cursor: pointer;
+   background-color: #C0C0C0;
+   background-image: none;
+   border: 1px solid #A9A9A9;
+   color: #FFFFFF;
+   white-space: nowrap;
+   padding: 4px 8px 4px 8px;
+   font-family:Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 18px;
+   border-radius: 4px;
+   height: 26px;
+}
+#FileUpload1 .input-group-btn > .btn
+{
+   position: relative;
+}
+#FileUpload1 :last-child.form-control, #FileUpload1 :last-child.input-group-btn > .btn, #FileUpload1 :last-child.input-group-btn > .btn-group > .btn, #FileUpload1 :first-child.input-group-btn > :not(:first-child).btn, FileUpload1 :first-child.input-group-btn > :not(:first-child).btn-group > .btn
+{
+   border-bottom-left-radius: 0px;
+   border-top-left-radius: 0px;
+}
+#FileUpload1 :last-child.input-group-btn > .btn, FileUpload1 :last-child.input-group-btn > .btn-group
+{
+   margin-left: -1px;
+}
+#Label4
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#696969;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 24px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: center;
+   vertical-align: top;
+}
+#Editbox3
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox3:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Editbox4
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox4:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Editbox5
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox5:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Label3
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label5
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label6
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label7
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#wb_FlipSwitch1
+{
+   margin: 0;
+}
+#FlipSwitch1
+{
+   display: none;
+}
+#FlipSwitch1-label
+{
+   display: block;
+   overflow: hidden;
+   cursor: pointer;
+   border: 2px solid #636363;
+   border-radius: 15px;
+   box-sizing: border-box;
+   max-width: 100%;
+   height: 100%;
+   -webkit-transition: border-color 300ms ease-in 0s;
+   transition: border-color 300ms ease-in 0s;
+}
+#FlipSwitch1-inner
+{
+   box-sizing: border-box;
+   display: block;
+   width: 200%;
+   margin-left: -100%;
+   -webkit-transition: margin 300ms ease-in 0s;
+   transition: margin 300ms ease-in 0s;
+}
+#FlipSwitch1-inner:before, #FlipSwitch1-inner:after
+{
+   display: block;
+   float: left;
+   width: 50%;
+   height: 15px;
+   padding: 0;
+   line-height: 15px;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   box-sizing: border-box;
+   border-radius: 15px;
+   text-align: center;
+}
+#FlipSwitch1-inner:before
+{
+   content: "Вкл";
+   padding-right: 15px;
+   background-color: #D3D3D3;
+   color: #FFFFFF;
+   border-radius: 15px 0 0 15px;
+}
+#FlipSwitch1-inner:after
+{
+   content: "Выкл";
+   padding-left: 15px;
+   background-color: #696969;
+   color: #000000;
+   border-radius: 0 15px 15px 0;
+}
+#FlipSwitch1-switch
+{
+   display: block;
+   width: 15px;
+   margin: 0px;
+   background: #FFFFFF;
+   border: 2px solid #636363;
+   border-radius: 15px;
+   box-shadow: 0px 0px 5px rgba(0,0,0,0.30);
+   position: absolute;
+   top: 2px;
+   bottom: 2px;
+   right: 40px;
+   -webkit-transition: all 300ms ease-in 0s;
+   transition: all 300ms ease-in 0s;
+   box-sizing: border-box;
+}
+#FlipSwitch1:checked + #FlipSwitch1-label
+{
+   border-color: #636363;
+}
+#FlipSwitch1:checked + #FlipSwitch1-label #FlipSwitch1-inner
+{
+   margin-left: 0;
+}
+#FlipSwitch1:checked + #FlipSwitch1-label #FlipSwitch1-switch
+{
+   right: 2px;
+   background: #FFFFFF;
+   border-color: #636363;
+}
+#Button2
+{
+   border: 1px solid #C0C0C0;
+   border-radius: 4px;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   color: #4F4F4F;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 21px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#RPLayer
+{
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+}
+#Editbox6
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox6:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Editbox7
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox7:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Label8
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label9
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label10
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#696969;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 24px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: center;
+   vertical-align: top;
+}
+#Editbox8
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox8:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Editbox9
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox9:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Editbox10
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox10:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#Editbox11
+{
+   border: 1px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#696969;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 17px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+}
+#Editbox11:focus
+{
+   border-color: #C0C0C0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(192,192,192,0.60);
+   outline: 0;
+}
+#wb_FlipSwitch2
+{
+   margin: 0;
+}
+#FlipSwitch2
+{
+   display: none;
+}
+#FlipSwitch2-label
+{
+   display: block;
+   overflow: hidden;
+   cursor: pointer;
+   border: 2px solid #636363;
+   border-radius: 15px;
+   box-sizing: border-box;
+   max-width: 100%;
+   height: 100%;
+   -webkit-transition: border-color 300ms ease-in 0s;
+   transition: border-color 300ms ease-in 0s;
+}
+#FlipSwitch2-inner
+{
+   box-sizing: border-box;
+   display: block;
+   width: 200%;
+   margin-left: -100%;
+   -webkit-transition: margin 300ms ease-in 0s;
+   transition: margin 300ms ease-in 0s;
+}
+#FlipSwitch2-inner:before, #FlipSwitch2-inner:after
+{
+   display: block;
+   float: left;
+   width: 50%;
+   height: 15px;
+   padding: 0;
+   line-height: 15px;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   box-sizing: border-box;
+   border-radius: 15px;
+   text-align: center;
+}
+#FlipSwitch2-inner:before
+{
+   content: "Вкл";
+   padding-right: 15px;
+   background-color: #DCDCDC;
+   color: #FFFFFF;
+   border-radius: 15px 0 0 15px;
+}
+#FlipSwitch2-inner:after
+{
+   content: "Выкл";
+   padding-left: 15px;
+   background-color: #808080;
+   color: #000000;
+   border-radius: 0 15px 15px 0;
+}
+#FlipSwitch2-switch
+{
+   display: block;
+   width: 15px;
+   margin: 0px;
+   background: #FFFFFF;
+   border: 2px solid #636363;
+   border-radius: 15px;
+   box-shadow: 0px 0px 5px rgba(0,0,0,0.30);
+   position: absolute;
+   top: 2px;
+   bottom: 2px;
+   right: 40px;
+   -webkit-transition: all 300ms ease-in 0s;
+   transition: all 300ms ease-in 0s;
+   box-sizing: border-box;
+}
+#FlipSwitch2:checked + #FlipSwitch2-label
+{
+   border-color: #636363;
+}
+#FlipSwitch2:checked + #FlipSwitch2-label #FlipSwitch2-inner
+{
+   margin-left: 0;
+}
+#FlipSwitch2:checked + #FlipSwitch2-label #FlipSwitch2-switch
+{
+   right: 2px;
+   background: #FFFFFF;
+   border-color: #636363;
+}
+#Label11
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label12
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label13
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Label14
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#000000;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 16px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#Button3
+{
+   border: 1px solid #C0C0C0;
+   border-radius: 4px;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   color: #4F4F4F;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 21px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#Button4
+{
+   border: 1px solid #C0C0C0;
+   border-radius: 4px;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   color: #4F4F4F;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-size: 21px;
+   -webkit-appearance: none;
+   margin: 0;
+}
+#PageFooter
+{
+   background-color: #808080;
+   background: linear-gradient(to top, #808080 0%, #D3D3D3 100%);
+   box-shadow: 0px 0px 1px #0000FF;
+   box-sizing: border-box;
+}
+#Editbox5
+{
+   position: absolute;
+   left: 268px;
+   top: 230px;
+   width: 164px;
+   height: 17px;
+   z-index: 10;
+}
+#Button3
+{
+   position: absolute;
+   left: 69px;
+   top: 473px;
+   width: 329px;
+   height: 31px;
+   z-index: 30;
+}
+#Button4
+{
+   position: absolute;
+   left: 69px;
+   top: 520px;
+   width: 329px;
+   height: 31px;
+   z-index: 256;
+}
+#Editbox6
+{
+   position: absolute;
+   left: 149px;
+   top: 41px;
+   width: 283px;
+   height: 16px;
+   z-index: 17;
+}
+#RPLayer
+{
+   position: absolute;
+   text-align: left;
+   left: 0px;
+   top: 0px;
+   width: 568px;
+   height: 433px;
+   z-index: 32;
+}
+#MainLayer
+{
+   position: absolute;
+   text-align: left;
+   left: 510px;
+   top: 155px;
+   width: 1401px;
+   height: 812px;
+   z-index: 68;
+}
+#PageFooter_sensitive
+{
+   position: fixed;
+   display: none;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 50px;
+   z-index: 9999;
+}
+#Editbox7
+{
+   position: absolute;
+   left: 149px;
+   top: 80px;
+   width: 283px;
+   height: 17px;
+   z-index: 18;
+}
+#Button2
+{
+   position: absolute;
+   left: 69px;
+   top: 327px;
+   width: 329px;
+   height: 31px;
+   z-index: 15;
+}
+#wb_OverlayMenu1
+{
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   width: 100px;
+   height: 100px;
+   z-index: 0;
+}
+#Button1
+{
+   position: absolute;
+   left: 8px;
+   top: 110px;
+   width: 380px;
+   height: 35px;
+   z-index: 67;
+}
+#ButtonFind
+{
+   position: absolute;
+   left: 8px;
+   top: 155px;
+   width: 487px;
+   height: 35px;
+   z-index: 67;
+}
+#ButtonSort
+{
+   position: absolute;
+   left: 8px;
+   top: 210px;
+   width: 487px;
+   height: 35px;
+   z-index: 67;
+}
+#FileUpload1-file
+{
+   display: none;
+}
+#Editbox1
+{
+   position: absolute;
+   left: 149px;
+   top: 73px;
+   width: 283px;
+   height: 16px;
+   z-index: 2;
+}
+#EditboxFind
+{
+   position: absolute;
+   left: 149px;
+   top: 73px;
+   width: 283px;
+   height: 16px;
+   z-index: 2;
+}
+#PageFooter
+{
+   position: fixed;
+   overflow: hidden;
+   text-align: left;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 50px;
+   z-index: 69;
+}
+#Editbox2
+{
+   position: absolute;
+   left: 149px;
+   top: 112px;
+   width: 283px;
+   height: 17px;
+   z-index: 3;
+}
+#Editbox10
+{
+   position: absolute;
+   left: 268px;
+   top: 198px;
+   width: 164px;
+   height: 17px;
+   z-index: 24;
+}
+#Editbox11
+{
+   position: absolute;
+   left: 30px;
+   top: 238px;
+   width: 402px;
+   height: 200px;
+   z-index: 255;
+}
+#Editbox3
+{
+   position: absolute;
+   left: 30px;
+   top: 152px;
+   width: 164px;
+   height: 17px;
+   z-index: 8;
+}
+#CPLayer
+{
+   position: absolute;
+   text-align: left;
+   left: 0px;
+   top: 0px;
+   width: 551px;
+   height: 433px;
+   z-index: 31;
+}
+#wb_Logo
+{
+   position: absolute;
+   left: 100px;
+   top: 0px;
+   width: 455px;
+   height: 100px;
+   z-index: 1;
+}
+#PageHeader
+{
+   position: absolute;
+   text-align: left;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 100px;
+   z-index: 70;
+}
+#wb_FlipSwitch2
+{
+   position: absolute;
+   left: 385px;
+   top: 244px;
+   width: 57px;
+   height: 19px;
+   z-index: 25;
+}
+#Label9
+{
+   position: absolute;
+   left: 25px;
+   top: 80px;
+   width: 116px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 20;
+}
+#wb_FlipSwitch1
+{
+   position: absolute;
+   left: 385px;
+   top: 276px;
+   width: 57px;
+   height: 19px;
+   z-index: 16;
+}
+#Label12
+{
+   position: absolute;
+   left: 25px;
+   top: 158px;
+   width: 235px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 27;
+}
+#Label8
+{
+   position: absolute;
+   left: 25px;
+   top: 41px;
+   width: 116px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 19;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 228px;
+   top: 328px;
+   width: 2px;
+   height: 15px;
+   z-index: 64;
+}
+#Label13
+{
+   position: absolute;
+   left: 25px;
+   top: 198px;
+   width: 235px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 28;
+}
+#Label10
+{
+   position: absolute;
+   left: 54px;
+   top: 2px;
+   width: 351px;
+   height: 31px;
+   line-height: 31px;
+   z-index: 21;
+}
+#Label7
+{
+   position: absolute;
+   left: 25px;
+   top: 272px;
+   width: 312px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 14;
+}
+#Label11
+{
+   position: absolute;
+   left: 25px;
+   top: 119px;
+   width: 235px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 26;
+}
+#Editbox8
+{
+   position: absolute;
+   left: 268px;
+   top: 119px;
+   width: 164px;
+   height: 17px;
+   z-index: 22;
+}
+#Label6
+{
+   position: absolute;
+   left: 25px;
+   top: 230px;
+   width: 235px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 13;
+}
+#Editbox9
+{
+   position: absolute;
+   left: 268px;
+   top: 158px;
+   width: 164px;
+   height: 17px;
+   z-index: 23;
+}
+#Label5
+{
+   position: absolute;
+   left: 25px;
+   top: 190px;
+   width: 235px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 12;
+}
+#Label4
+{
+   position: absolute;
+   left: 54px;
+   top: 0px;
+   width: 351px;
+   height: 31px;
+   line-height: 31px;
+   z-index: 7;
+}
+#Label14
+{
+   position: absolute;
+   left: 25px;
+   top: 240px;
+   width: 312px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 29;
+}
+#Label3
+{
+   position: absolute;
+   left: 25px;
+   top: 152px;
+   width: 235px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 11;
+}
+#Label2
+{
+   position: absolute;
+   left: 25px;
+   top: 112px;
+   width: 116px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 5;
+}
+#Editbox4
+{
+   position: absolute;
+   left: 268px;
+   top: 190px;
+   width: 164px;
+   height: 17px;
+   z-index: 9;
+}
+#FileUpload1
+{
+   position: absolute;
+   left: 25px;
+   top: 39px;
+   width: 417px;
+   height: 26px;
+   z-index: 6;
+}
+#Label1
+{
+   position: absolute;
+   left: 25px;
+   top: 73px;
+   width: 116px;
+   height: 19px;
+   line-height: 19px;
+   z-index: 4;
+}
+#Combobox1
+{
+   position: absolute;
+   left: 8px;
+   top: 155px;
+   width: 487px;
+   height: 812px;
+   z-index: 66;
+}
+@media only screen and (min-width: 1920px)
+{
+body
+{
+   background-color: #FFFFFF;
+}
+#PageHeader
+{
+   top: 0px;
+   height: 100px;
+   visibility: visible;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #808080 100%);
+}
+#PageHeader
+{
+   width: 100%;
+}
+#BuildWith1
+{
+   left: 707px;
+   top: 0px;
+   width: 88px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+}
+#wb_OverlayMenu1
+{
+   left: 0px;
+   top: 0px;
+   width: 100px;
+   height: 100px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#OverlayMenu1
+{
+   background-color: rgba(66,66,66,0.00);
+   background-image: none;
+   border: 0px solid #424242;
+   width: 100px;
+   height: 100px;
+}
+#OverlayMenu1:hover
+{
+   background-color: rgba(204,204,204,0.00);
+   background-image: none;
+   border-color: #424242;
+}
+#OverlayMenu1 .line
+{
+   background: #FFFFFF;
+}
+#OverlayMenu1:hover .line
+{
+   background: #424242;
+}
+#OverlayMenu1 .line:first-child
+{
+   margin-top: 34px;
+}
+#OverlayMenu1-overlay ul
+{
+   font-size: 19px;
+   text-align: center;
+}
+#wb_Logo
+{
+   left: 100px;
+   top: 0px;
+   width: 455px;
+   height: 100px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+   color: #FFFFFF;
+   font-size: 75px;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Logo
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   text-align: center;
+}
+#Logo
+{
+   color: #FFFFFF;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 75px;
+   text-shadow: 1px 1px 2px rgba(0,0,255,0.50);
+}
+#wb_Text1
+{
+   left: 228px;
+   top: 328px;
+   width: 2px;
+   height: 15px;
+   visibility: visible;
+   display: inline;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#MainContainer
+{
+   left: 0px;
+   top: 100px;
+   width: 1920px;
+   height: 870px;
+   visibility: visible;
+   display: inline;
+}
+#MainContainer
+{
+   width: 1920px;
+   height: 870px;
+}
+#Combobox1
+{
+   left: 8px;
+   top: 200px;
+   width: 487px;
+   height: 505px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   color: #4F4F4F;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 5px;
+}
+#Button1
+{
+   left: 8px;
+   top: 155px;
+   width: 380px;
+   height: 35px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 24px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#ButtonFind
+{
+   left: 395px;
+   top: 155px;
+   width: 100px;
+   height: 35px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 24px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#ButtonSort
+{
+   left: 395px;
+   top: 155px;
+   width: 100px;
+   height: 35px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#MainLayer
+{
+   left: 510px;
+   top: 155px;
+   width: 1401px;
+   height: 812px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: rgba(0,0,205,0.00);
+   background-image: none;
+}
+#CPLayer
+{
+   left: 0px;
+   top: 0px;
+   width: 1401px;
+   height: 812px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+}
+#Editbox1
+{
+   left: 149px;
+   top: 73px;
+   width: 283px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox1
+{
+   line-height: 16px;
+}
+#EditboxFind
+{
+   left: 8px;
+   top: 115px;
+   width: 370px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#EditboxFind
+{
+   line-height: 16px;
+}
+#Editbox2
+{
+   left: 149px;
+   top: 112px;
+   width: 283px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox2
+{
+   line-height: 17px;
+}
+#Label1
+{
+   left: 25px;
+   top: 73px;
+   width: 116px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label2
+{
+   left: 25px;
+   top: 112px;
+   width: 116px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#FileUpload1
+{
+   left: 25px;
+   top: 39px;
+   width: 417px;
+   height: 26px;
+   visibility: visible;
+   display: table;
+   margin: 0;
+   color: #555555;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label4
+{
+   left: 54px;
+   top: 0px;
+   width: 351px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: center;
+   color: #696969;
+   font-size: 24px;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox3
+{
+   left: 268px;
+   top: 152px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox3
+{
+   line-height: 17px;
+}
+#Editbox4
+{
+   left: 268px;
+   top: 190px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox4
+{
+   line-height: 17px;
+}
+#Editbox5
+{
+   left: 268px;
+   top: 230px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox5
+{
+   line-height: 17px;
+}
+#Label3
+{
+   left: 25px;
+   top: 152px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label5
+{
+   left: 25px;
+   top: 190px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label6
+{
+   left: 25px;
+   top: 230px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label7
+{
+   left: 25px;
+   top: 272px;
+   width: 312px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#PageFooter
+{
+   height: 50px;
+   visibility: visible;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #808080;
+   background: linear-gradient(to top, #808080 0%, #D3D3D3 100%);
+}
+}
+@media only screen and (max-width: 1919px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#PageHeader
+{
+   top: 0px;
+   height: 100px;
+   visibility: visible;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #808080 100%);
+}
+#PageHeader
+{
+   width: 100%;
+}
+#BuildWith1
+{
+   left: 1192px;
+   top: 0px;
+   width: 88px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+}
+#wb_OverlayMenu1
+{
+   left: 0px;
+   top: 0px;
+   width: 100px;
+   height: 100px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#OverlayMenu1
+{
+   background-color: rgba(66,66,66,0.00);
+   background-image: none;
+   border: 0px solid #424242;
+   width: 100px;
+   height: 100px;
+}
+#OverlayMenu1:hover
+{
+   background-color: rgba(204,204,204,0.00);
+   background-image: none;
+   border-color: #424242;
+}
+#OverlayMenu1 .line
+{
+   background: #FFFFFF;
+}
+#OverlayMenu1:hover .line
+{
+   background: #424242;
+}
+#OverlayMenu1 .line:first-child
+{
+   margin-top: 34px;
+}
+#OverlayMenu1-overlay ul
+{
+   font-size: 19px;
+   text-align: center;
+}
+#wb_Logo
+{
+   left: 100px;
+   top: 0px;
+   width: 455px;
+   height: 100px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+   color: #FFFFFF;
+   font-size: 75px;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Logo
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   text-align: center;
+}
+#Logo
+{
+   color: #FFFFFF;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-size: 75px;
+   text-shadow: 1px 1px 2px rgba(0,0,255,0.50);
+}
+#wb_Text1
+{
+   left: 228px;
+   top: 328px;
+   width: 2px;
+   height: 15px;
+   visibility: visible;
+   display: inline;
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#MainContainer
+{
+   left: 0px;
+   top: 100px;
+   width: 1280px;
+   height: 570px;
+   visibility: visible;
+   display: inline;
+}
+#MainContainer
+{
+   width: 1280px;
+   height: 570px;
+}
+#Combobox1
+{
+   left: 8px;
+   top: 200px;
+   width: 487px;
+   height: 505px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   color: #4F4F4F;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 5px;
+}
+#Button1
+{
+   left: 8px;
+   top: 155px;
+   width: 380px;
+   height: 35px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 24px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#ButtonFind
+{
+   left: 395px;
+   top: 110px;
+   width: 100px;
+   height: 35px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 24px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#ButtonSort
+{
+   left: 395px;
+   top: 155px;
+   width: 100px;
+   height: 35px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#MainLayer
+{
+   left: 510px;
+   top: 155px;
+   width: 770px;
+   height: 515px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: rgba(0,0,205,0.00);
+   background-image: none;
+}
+#CPLayer
+{
+   left: 0px;
+   top: 0px;
+   width: 725px;
+   height: 505px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+}
+#Editbox1
+{
+   left: 149px;
+   top: 73px;
+   width: 283px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox1
+{
+   line-height: 16px;
+}
+#EditboxFind
+{
+   left: 8px;
+   top: 115px;
+   width: 370px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#EditboxFind
+{
+   line-height: 16px;
+}
+#Editbox2
+{
+   left: 149px;
+   top: 112px;
+   width: 283px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox2
+{
+   line-height: 17px;
+}
+#Label1
+{
+   left: 25px;
+   top: 73px;
+   width: 116px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label2
+{
+   left: 25px;
+   top: 112px;
+   width: 116px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#FileUpload1
+{
+   left: 25px;
+   top: 39px;
+   width: 417px;
+   height: 26px;
+   visibility: visible;
+   display: table;
+   margin: 0;
+   color: #555555;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label4
+{
+   left: 54px;
+   top: 0px;
+   width: 351px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: center;
+   color: #696969;
+   font-size: 24px;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox3
+{
+   left: 268px;
+   top: 152px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox3
+{
+   line-height: 17px;
+}
+#Editbox4
+{
+   left: 268px;
+   top: 190px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox4
+{
+   line-height: 17px;
+}
+#Editbox5
+{
+   left: 268px;
+   top: 230px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox5
+{
+   line-height: 17px;
+}
+#Label3
+{
+   left: 25px;
+   top: 152px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label5
+{
+   left: 25px;
+   top: 190px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label6
+{
+   left: 25px;
+   top: 230px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label7
+{
+   left: 25px;
+   top: 272px;
+   width: 312px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#wb_FlipSwitch1
+{
+   left: 385px;
+   top: 276px;
+   width: 57px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+}
+#FlipSwitch1-label
+{
+   border-radius: 15px;
+   height: 100%;
+}
+#FlipSwitch1-inner:before, #FlipSwitch1-inner:after
+{
+   height: 15px;
+   padding: 0;
+   line-height: 15px;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#FlipSwitch1-inner:before
+{
+   padding-right: 15px;
+   border-radius: 15px 0 0 15px;
+}
+#FlipSwitch1-inner:after
+{
+   padding-left: 15px;
+   border-radius: 0 15px 15px 0;
+}
+#FlipSwitch1-switch
+{
+   width: 15px;
+   border-radius: 15px;
+   top: 2px;
+   bottom: 2px;
+   right: 40px;
+}
+#Button2
+{
+   left: 69px;
+   top: 327px;
+   width: 329px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 21px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#RPLayer
+{
+   left: 0px;
+   top: 0px;
+   width: 568px;
+   height: 433px;
+   visibility: visible;
+   display: inline;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+}
+#Editbox6
+{
+   left: 149px;
+   top: 41px;
+   width: 283px;
+   height: 16px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #696969;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox6
+{
+   line-height: 16px;
+}
+#Editbox7
+{
+   left: 149px;
+   top: 80px;
+   width: 283px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #696969;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox7
+{
+   line-height: 17px;
+}
+#Label8
+{
+   left: 25px;
+   top: 41px;
+   width: 116px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label9
+{
+   left: 25px;
+   top: 80px;
+   width: 116px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label10
+{
+   left: 54px;
+   top: 2px;
+   width: 351px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: center;
+   color: #696969;
+   font-size: 24px;
+   font-family: "Times New Roman";
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox8
+{
+   left: 268px;
+   top: 119px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #696969;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox8
+{
+   line-height: 17px;
+}
+#Editbox9
+{
+   left: 268px;
+   top: 158px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #696969;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox9
+{
+   line-height: 17px;
+}
+#Editbox10
+{
+   left: 268px;
+   top: 198px;
+   width: 164px;
+   height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #696969;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#Editbox10
+{
+   line-height: 17px;
+}
+#Editbox11
+{
+   left: 30px;
+   top: 238px;
+   width: 402px;
+   height: 200px;
+   line-height: 17px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #696969;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 4px;
+}
+#wb_FlipSwitch2
+{
+   left: 385px;
+   top: 244px;
+   width: 57px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+}
+#FlipSwitch2-label
+{
+   border-radius: 15px;
+   height: 100%;
+}
+#FlipSwitch2-inner:before, #FlipSwitch2-inner:after
+{
+   height: 15px;
+   padding: 0;
+   line-height: 15px;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#FlipSwitch2-inner:before
+{
+   padding-right: 15px;
+   border-radius: 15px 0 0 15px;
+}
+#FlipSwitch2-inner:after
+{
+   padding-left: 15px;
+   border-radius: 0 15px 15px 0;
+}
+#FlipSwitch2-switch
+{
+   width: 15px;
+   border-radius: 15px;
+   top: 2px;
+   bottom: 2px;
+   right: 40px;
+}
+#Label11
+{
+   left: 25px;
+   top: 119px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label12
+{
+   left: 25px;
+   top: 158px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label13
+{
+   left: 25px;
+   top: 198px;
+   width: 235px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Label14
+{
+   left: 25px;
+   top: 240px;
+   width: 312px;
+   height: 19px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   text-align: left;
+   color: #000000;
+   font-size: 16px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+   border-radius: 4px;
+}
+#Button3
+{
+   left: 69px;
+   top: 473px;
+   width: 329px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 21px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#Button4
+{
+   left: 69px;
+   top: 520px;
+   width: 329px;
+   height: 31px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   color: #4F4F4F;
+   font-size: 21px;
+   font-family: "Times New Roman";
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #DCDCDC;
+   background: linear-gradient(to top, #DCDCDC 0%, #F5F5F5 100%);
+   border-radius: 4px;
+}
+#PageFooter
+{
+   height: 50px;
+   visibility: visible;
+   font-size: 8px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: #808080;
+   background: linear-gradient(to top, #808080 0%, #D3D3D3 100%);
+}
+}
